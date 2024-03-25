@@ -1,0 +1,220 @@
+
+$thHeight:50px;
+$trHeight:40px;
+
+
+
+$thColor:rgb(246, 246, 246);
+
+$mainColor:rgb(22, 119, 255);
+
+
+
+$borderColor:#CCC;
+
+$wdith1:20%;
+$wdith2:30%;
+$wdith3:50%;
+
+
+
+html body {
+  height: 100%;
+  overflow: hidden;
+
+}
+#root {
+  height: 100%;
+}
+.homePage {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 100%;
+  .leftArea {
+    width: 200px;
+    background: rgb(34, 52, 82);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .imgUploaderArea {
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      .Upload {
+        .ant-upload {
+          overflow: hidden;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        
+      }
+    }
+    .moduleList {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+
+      .moduleItem {
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        padding: 0 20px;
+        border-top: 1px solid rgb(112, 111, 111);
+        &:last-child {
+          border-bottom:1px solid rgb(112, 111, 111);
+        }
+        .moduleItemText {
+          margin-left: 10px;
+        }
+        
+      }
+
+    }
+
+  }
+  .rightArea {
+    flex: 1;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .mainTitle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      width: 100%;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 5px;
+      
+    }
+    .tipTitle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 100%;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    .tableArea {
+      padding: 20px;
+    }
+
+  }
+
+  
+}
+.modalBox {
+  .modalTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #efefef;
+    padding: 20px;
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .line {
+      width: 150px;
+      height: 2px;
+      background: $mainColor;
+    }
+
+  }
+  .modalMiddle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    .middleText {
+      margin-left: 10px;
+    }
+  }
+
+}
+
+
+
+
+.th {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: $thHeight;
+  background: $thColor;
+  padding: 0 10px;
+}
+.tr {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: $trHeight;
+}
+.td {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.inputPD {
+  padding: 0 30px;
+}
+
+.bL {
+  border-left: 1px solid $borderColor;
+}
+.bT {
+  border-top: 1px solid $borderColor;
+}
+.bR {
+  border-right: 1px solid $borderColor;
+}
+.noBR {
+  border-right: none;
+}
+
+.bB {
+  border-bottom: 1px solid $borderColor;
+}
+.tdWdithTitle {
+  width: $wdith1;
+}
+.tdWdithValue {
+  width: $wdith2;
+}
+
+
+.tdWdith1 {
+  width: $wdith1;
+}
+.tdWdith2 {
+  width: $wdith2;
+}
+.tdWdith3 {
+  width: $wdith3;
+}
+
+.dfCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
