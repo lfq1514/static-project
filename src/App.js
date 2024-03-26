@@ -115,7 +115,12 @@ function App() {
     }
     //模块切换
     function moduleOnChange(activeKey){
-      setActiveKey(activeKey)
+      if(['1','2'].includes(activeKey)){
+        setActiveKey(activeKey)
+      }else {
+        message.warning('当前系统正在开发中，尽请期待～～')
+
+      }
     }
 
   return (
