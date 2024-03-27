@@ -152,9 +152,16 @@ function App() {
         })}
       </div>
      </div>
-     <div className='rightArea'>
-      <div className='mainTitle'>{moduleMap[activeKey].mainTitle}</div>
-      <div>填表时间：<span className='time'>{time}</span></div>
+     <div className='bigBox'>
+     <div className='mainTitle'>{moduleMap[activeKey].mainTitle}</div>
+      <div className='rightArea'>
+     
+      
+      <div className='tabBar'>
+        <div className='tabItem activeTab'>学籍注册系统</div>
+        <div className='tabItem'>注册须知</div>
+      </div>
+      <div className='billTime'>填表时间：<span className='time'>{time}</span></div>
       <div className='tipTitle'>提醒:本批次报名即将截止，自考档案通道将于2020年8月29日23:59关闭!!!</div>
 
       <div className='tableArea'>
@@ -164,9 +171,12 @@ function App() {
           <TD className="inputPD tdWdithValue"><Input/></TD>
           <TD className='tdWdithTitle'>时间</TD>
           <TD className="inputPD tdWdithValue"><Input/></TD>
-          <TD className='noBR' style={{width:'150px'}}><Button style={{backgroundColor:mainColor, color:'#fff'}}>查询</Button></TD>
+          <TD className='noBR' style={{width:'250px'}}><Button style={{backgroundColor:mainColor, color:'#fff'}} onClick={()=>{ message.success('查询成功')}}>查询</Button></TD>
        </TR>
-       <TR className='dfCenter'>总名额:100 已申请名额:80 剩余名额: 20</TR>
+       <TR className='dfCenter'> 
+       <span style={{marginRight:'20px'}}>总名额:&nbsp;&nbsp;&nbsp;100</span>
+       <span style={{marginRight:'20px'}}>已申请名额:&nbsp;&nbsp;&nbsp;80</span>
+       <span style={{marginRight:'20px'}}>剩余名额:&nbsp;&nbsp;&nbsp;20</span></TR>
        <TH >学籍注册系统</TH>
        <TR >
           <TD className='tdWdithTitle'>姓名</TD>
@@ -284,6 +294,7 @@ function App() {
       }
      
 
+     </div>
      </div>
     </div>
   );

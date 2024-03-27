@@ -1,6 +1,6 @@
 
 $thHeight:50px;
-$trHeight:40px;
+$trHeight:50px;
 
 
 
@@ -12,8 +12,8 @@ $mainColor:rgb(22, 119, 255);
 
 $borderColor:#CCC;
 
-$wdith1:20%;
-$wdith2:30%;
+$wdith1:10%;
+$wdith2:40%;
 $wdith3:50%;
 
 
@@ -29,7 +29,6 @@ html body {
 .homePage {
   display: flex;
   flex-direction: row;
-  text-align: center;
   height: 100%;
   .leftArea {
     width: 200px;
@@ -37,6 +36,7 @@ html body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
     .imgUploaderArea {
       height: 200px;
       display: flex;
@@ -79,36 +79,71 @@ html body {
     }
 
   }
-  .rightArea {
+  .bigBox {
     flex: 1;
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     .mainTitle {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100px;
       width: 100%;
-      font-size: 30px;
-      font-weight: 700;
-      letter-spacing: 5px;
+      font-size: 25px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-top: 50px;
+      margin-bottom: 10px;
       
     }
-    .tipTitle {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 50px;
-      width: 100%;
-      font-size: 20px;
-      font-weight: 400;
-    }
-    .tableArea {
-      padding: 20px;
+    .rightArea {
+      
+      border: 1px solid #ccc;
+     
+      .tabBar {
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+        border: 1px solid #ccc;
+        .tabItem {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100px;
+          padding: 0 20px;
+          border-right: 1px solid #ccc;
+          background: rgb(237, 237, 237);
+          
+  
+        }
+        .activeTab {
+          background: rgb(52, 111, 234);
+          color: #fff;
+  
+        }
+  
+  
+      }
+      .billTime {
+        margin-left: 5px;
+        margin-top: 2px;
+      }
+      .tipTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .tableArea {
+        padding: 20px;
+      }
+  
     }
 
   }
+ 
 
   
 }
