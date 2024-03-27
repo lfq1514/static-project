@@ -236,7 +236,7 @@ function App() {
         onOk={() => setVisible(false)}
         onCancel={() => setVisible(false)}
         footer={
-            <Button style={{backgroundColor:mainColor, color:'#fff'}}>确定</Button>
+            <Button style={{backgroundColor:mainColor, color:'#fff'}} onClick={() => setVisible(false)}>确定</Button>
         }
       >
         <div className='modalBox'>
