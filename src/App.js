@@ -11,7 +11,7 @@ function App() {
     {name:'学籍注册系统',key:'2'},
     {name:'补录系统',key:'3'},
     {name:'团报系统',key:'4'},
-    {name:'预约透统',key:'5'}])
+    {name:'预约系统',key:'5'}])
 
     const [loading, setLoading] = useState(false);
     const [imageUrl, setImageUrl] = useState();
@@ -158,7 +158,7 @@ function App() {
      
       
       <div className='tabBar'>
-        <div className='tabItem activeTab'>学籍注册系统</div>
+        <div className='tabItem activeTab'>{moduleMap[activeKey].mainTitle}</div>
         <div className='tabItem'>注册须知</div>
       </div>
       <div className='billTime'>填表时间：<span className='time'>{time}</span></div>
@@ -211,7 +211,7 @@ function App() {
        <TR  className='dfCenter'> <Button onClick={resist} style={{backgroundColor:mainColor,color:'#fff'}}>{moduleMap[activeKey].button1}</Button> </TR>
        <TR  style={{height:'auto',flexDirection:'column',alignItems: 'flex-start',padding:'10px 0'}}> 
        <p>注:</p>
-       <p>1、报考信息统一录入学籍注册系统，考前指导学员报名提交之前务必确认学员报考信息正确，以免错报误报</p>
+       <p>1、报考信息统一录入学籍注册系统，考前指导学员报名</p>
        <p>2、提交之前务必确认学员报考信息正确，以免错报误报</p>
         </TR>
         <TH >学籍注册申请名单一览表</TH>
