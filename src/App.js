@@ -7,10 +7,11 @@ import { message, Upload,Input, Button,Modal } from 'antd';
 const mainColor='rgb(22, 119, 255)'
 function App() {
   const [moduleList,setModuleList]=useState(
-    [{name:'助学金申请系统',key:'1'},
+    [
     {name:'学籍注册系统',key:'2'},
     {name:'补录系统',key:'3'},
-    {name:'团报系统',key:'4'},
+    {name:'圆梦计划',key:'1'},
+    {name:'同桌计划',key:'4'},
     {name:'预约系统',key:'5'}])
 
     const [loading, setLoading] = useState(false);
